@@ -4,22 +4,22 @@
 
 ---
 
-## 进度
+## 进度跟踪
 
 7.3
 
-- [x] 完成 OpenVLA 论文架构的复习，源码部分重点根据 image token 和 text token 的 preprocessing 进行了跟踪，采用断点调试的方式理解 action shape 的 encode 和 decode 过程，产出源码阅读笔记：[logs/OpenVLA.md](logs/OpenVLA.md)
+✅ 完成 OpenVLA 论文架构的复习，源码部分重点根据 image token 和 text token 的 preprocessing 进行了跟踪，采用断点调试的方式理解 action shape 的 encode 和 decode 过程，产出源码阅读笔记：[logs/OpenVLA.md](logs/OpenVLA.md)
 
 7.2
 
-- [x] 总结近期阅读的 Cosmos3、PAIWorld、Qwen-RobotManip 三篇工作笔记，并上传。
+🔄 总结近期阅读的 Cosmos3、PAIWorld、Qwen-RobotManip 三篇工作笔记，并上传。（**笔记尚未完全整理完**）
 
 ## 论文笔记
 
 | 论文 | 笔记 |
 |------|------|
 | OpenVLA | [notes/papers/OpenVLA.md](notes/papers/OpenVLA.md) |
-| Cosmos 3 | [notes/papers/Cosmos%203.md](notes/papers/Cosmos%203.md) |
+| Cosmos 3 | [notes/papers/Cosmos3.md](notes/papers/Cosmos3.md) |
 | PAIWorld | [notes/papers/PAIWorld.md](notes/papers/PAIWorld.md) |
 | Qwen-RobotManip | [notes/papers/Qwen-RobotManip.md](notes/papers/Qwen-RobotManip.md) |
 | Fast-WAM | [notes/papers/Fast-WAM.md](notes/papers/Fast-WAM.md) |
