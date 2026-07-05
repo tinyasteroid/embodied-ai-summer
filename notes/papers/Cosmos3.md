@@ -35,16 +35,18 @@ Cosmos 3 将 token sequence 固定拆成两段：[AR subsequence, DM subsequence
 AR subsequence 负责理解和推理，生成时，AR 提供“条件上下文”，让模型看懂图像、理解语义。AR 段不能看 diffusion 段。
 
 diffusion subsequence 中的 noisy tokens 被逐步 denoise 成 clean tokens，负责生成 图像、视频、音频、动作等连续模态。DM tokens 之间用 full bidirectional attention，这个过程需要 token 之间的双向通信，以保持视频、音频、动作之间的一致性。
+
 $$
 O_{\mathrm{AR}}
 =
-\operatorname{Attn}_{\mathrm{causal}}
+\mathrm{Attn}_{\mathrm{causal}}
 (Q_{\mathrm{AR}}, K_{\mathrm{AR}}, V_{\mathrm{AR}})
 $$
+
 $$
 O_{\mathrm{DM}}
 =
-\operatorname{Attn}_{\mathrm{full}}
+\mathrm{Attn}_{\mathrm{full}}
 (
 Q_{\mathrm{DM}},
 [K_{\mathrm{AR}}; K_{\mathrm{DM}}],
@@ -84,7 +86,7 @@ Generator 可以覆盖图像、视频、音频、transfer generation *Sec. 6.2.1
 | ------- | ------------------------------------------------------------------------------------------- |
 | PT-init | 只从 pre-trained checkpoint 开始，没有见过 action-domain data                                        |
 | MT-init | 从 mid-trained checkpoint 开始，已经见过多领域 action data，包括 forward dynamics、inverse dynamics、policy |
-如果 MT-init 好于 PT-init，说明 action mid-training 能在多个 action domain 之间学到可迁移结构。 
+如果 MT-init 好于 PT-init，说明 action mid-training 能在多个 action domain 之间学到可迁移结构。
 
 ![](../../Attachments/Cosmos%203-1782830924279.webp)
 *Sec. 6.2.5 Robot Policy，Table 19*

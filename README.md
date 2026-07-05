@@ -22,6 +22,7 @@
 
 ## 论文笔记
 > 部分数学公式和换行未能正常渲染显示。
+
 | 论文 | 笔记 |
 |------|------|
 | OpenVLA | [notes/papers/OpenVLA.md](notes/papers/OpenVLA.md) |
