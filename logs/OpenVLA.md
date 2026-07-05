@@ -237,7 +237,9 @@ def predict_action(self, image, unnorm_key, instruction, uncenter_action=True):
 
 ### 5.1 Unnormalize 公式
 
-$$a_{\text{final}} = \begin{cases} 0.5 \times (a_{\text{norm}} + 1) \times (q_{99} - q_{01}) + q_{01}, & \text{if mask = True} \\ a_{\text{norm}}, & \text{if mask = False} \end{cases}$$
+$$
+a_{\text{final}} = \begin{cases} 0.5 \times (a_{\text{norm}} + 1) \times (q_{99} - q_{01}) + q_{01}, & \text{if mask = True} \\ a_{\text{norm}}, & \text{if mask = False} \end{cases}
+$$
 
 - `0.5 × (a_norm + 1)` 将 `[-1, 1]` 映射到 `[0, 1]`
 - 再乘以 `(q99 - q01)` 加 `q01`，映射回原始量纲

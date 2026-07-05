@@ -35,7 +35,7 @@
 | ReconVLA | [notes/papers/ReconVLA.md](notes/papers/ReconVLA.md) |
 | RynnVLA-002 | [notes/papers/RynnVLA-002.md](notes/papers/RynnVLA-002.md) |
 | WorldVLA | [notes/papers/WorldVLA.md](notes/papers/WorldVLA.md) |
-| π₀ (pi0) | [notes/papers/p0.md](notes/papers/p0.md) |
+| π₀ (pi0) | [notes/papers/π0.md](notes/papers/%CF%800.md) |
 | π0.5 | [notes/papers/π0.5.md](notes/papers/%CF%800.5.md) |
 
 概念笔记：[Diffusion Model](notes/concepts/Diffusion%20Model.md) | [Flow Matching](notes/concepts/Flow%20Matching.md)
