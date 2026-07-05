@@ -32,7 +32,7 @@ action = [
 通过映射得到：
 `action_token_ids = [31903, 31859, 31948, 31884, 31864, 31912, 31999]`
 
-> [!attention] 为什么用 1st quantile 和 99th quantile，而不用 min/max？
+> [!WARNING] 为什么用 1st quantile 和 99th quantile，而不用 min/max？
 > 忽略 outlier actions 异常值。
 
 推理时，detokenizer 即可。类似于 `31903 -> bin 159 -> continuous action value`

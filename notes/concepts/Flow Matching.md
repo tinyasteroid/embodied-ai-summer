@@ -42,7 +42,7 @@ $$
 其中：
 - $f_\theta^a(a_{t:t+H}^{\tau,\omega}, o_t,\ell)$ 是 action expert neural network，输入是括号内的东西，输出是一个 vector field，和 action chunk 保持 shape 一致。
 
-> [!info] 如何理解这个损失函数？
+> [!NOTE] 如何理解这个损失函数？
 > 本质上是一个**监督回归**问题，我们构造的 noisy action 是已知的，那么这条直线路径上的“正确速度”就是已知的：$v^\star = a_{t:t+H} - \omega$ ，于是训练变成一个监督回归问题，
 >
 > $$

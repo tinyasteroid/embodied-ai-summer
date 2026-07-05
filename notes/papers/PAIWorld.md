@@ -17,7 +17,8 @@ $$
 在训练时，未来多视角视频会经过 ST-VAE 得到 ground-truth latent，用于和模型预测的 latent 计算 flow-matching-loss
 
 DA 3，即 Depth Anything 3 encoder，用于提供视频图像背后的 3D 空间结构特征（3D-aware feature），用于后面的 Latent 3D-REPA 监督。训练时保持 frozen。
-> [!attention]
+
+> [!WARNING]
 > 怎么理解这一层损失函数的设计？
 
 $$
@@ -123,4 +124,3 @@ $$
 $$
 
 论文中设置 $\lambda = 0.5$
-

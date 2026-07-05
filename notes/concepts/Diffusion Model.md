@@ -46,7 +46,7 @@ Diffusion 可以建模复杂的分布，同一个 observation 下，可以采样
 常作为 diffusion action head / flow matching action head，用来生成连续、平滑的动作序列。
 作为 VLA 中 action generation head。
 
-###  [[Flow Matching]]
+### [Flow Matching](Flow%20Matching.md)
 
 ### Latent Diffusion
 具身智能中，模型可能给出 future latent states、world model latent 等，再在 latent 上做 diffusion：`latent noise -> denoised latent -> decoder -> data`
